@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ParentProject6Application {
+public class ParentProject6Web {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ParentProject6Application.class, args);
+		SpringApplication.run(ParentProject6Web.class, args);
 	}
 }

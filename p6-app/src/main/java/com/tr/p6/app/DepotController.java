@@ -1,4 +1,4 @@
-package com.tr.p6.controller;
+package com.tr.p6.app;
 
 import java.util.List;
 
@@ -43,9 +43,9 @@ public class DepotController {
 	}
 	
 	@ApiOperation(value = "根据名称获取")
-	@GetMapping("/depot/listByPlace")
-	public Result<List<Depot>> listByPlace(@RequestParam String place) {
-		return Result.success(depotRepository.listByPlace(place));
+	@GetMapping("/depot/listByName")
+	public Result<List<Depot>> listByPlace(@RequestParam String name) {
+		return Result.success(depotRepository.findByName(name));
 	}
 
 }

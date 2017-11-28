@@ -64,6 +64,7 @@
 		<module>p6-service</module>
 		<module>p6-web</module>
 		<module>p6-common</module>
+		<module>p6-app</module>
 	</modules>
 	
 </project>

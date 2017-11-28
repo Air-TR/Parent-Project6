@@ -26,7 +26,7 @@ import com.google.common.collect.Lists;
 
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
-public class Jpa {
+public class Hibernate {
 	
 	@Value(value = "${hibernate.show_sql:false}")
 	private String showSQL;

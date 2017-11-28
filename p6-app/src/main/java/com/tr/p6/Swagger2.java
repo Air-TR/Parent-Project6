@@ -21,16 +21,16 @@ public class Swagger2 {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
 	            .apiInfo(apiInfo())
-	            .tags(new Tag("Depot", "仓库"), getTags())
+	            .tags(new Tag("Staff", "职员"), getTags())
 	            .select()
-	            .apis(RequestHandlerSelectors.basePackage("com.tr.p6.pc"))
+	            .apis(RequestHandlerSelectors.basePackage("com.tr.p6.app"))
 	            .paths(PathSelectors.any())
 	            .build();
     }
     
     private Tag[] getTags() {
 	    	Tag[] tags = {
-	    		new Tag("Staff", "职员"),
+	    		new Tag("Depot", "仓库"),
 	    		new Tag("Exception", "异常"),
 	    		new Tag("Properties", "配置")
 	    	};
@@ -41,7 +41,7 @@ public class Swagger2 {
     		Contact contact = new Contact("TR", "http://www.tr.com/", "tr1838@163.com");
         return new ApiInfoBuilder()
 	            .title("Parent-Project6")
-	            .description("接口文档 api - pc端")
+	            .description("接口文档 api - app端")
 	            .termsOfServiceUrl("http://www.baidu.com/")
 	            .contact(contact)
 	            .version("1.0")
